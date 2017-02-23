@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block my_extrajs %}
+
+
+<script src="{% static 'js/balance.js' %}"></script>
+
+{% endblock %}
+
+{% block my_content %}
+<center style="margin: 200px 10px">
+
+      <h1  style="s">coinbase balance</h1>
+      <button type="button" onClick="watchBalance();" >watch balance</button>
+      <div></div>
+      <div id="coinbase"></div>
+      <div id="original"></div>
+      <div id="current"></div>
+      <div id="diff"></div>
+</center>
+{% endblock %}
